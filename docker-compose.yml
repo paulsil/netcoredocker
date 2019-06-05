@@ -3,10 +3,16 @@ version: '2'
 services:
   app1:
     image: netcore_mvc_image
+    environment:
+      - LOGGING_DIR=/logs/
   app2:
     image: netcore_mvc_image
+    environment:
+      - LOGGING_DIR=/logs/
   app3:
     image: netcore_mvc_image
+    environment:
+      - LOGGING_DIR=/logs/
 
   nginx:
     image: netcore_nginx
